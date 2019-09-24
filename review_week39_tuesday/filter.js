@@ -19,15 +19,15 @@ Now, assume the array did not offer these two methods.Then we would have to impl
     and returns a new (filtered) array according to the code provided in the callback(this method should provide the
         same behaviour as the original filter method). */
 
-function myFilter(array, callback) {
-    callback(array);
-};
+// function myFilter(array, callback) {
+//     callback(array);
+// };
 
-function callback(e) {
-    return e.contains('a');
-}
+// function callback(e) {
+//     return e.contains('a');
+// }
 
-console.log(myFilter(d, callback()));
+// console.log(myFilter(d, callback()));
 
 /* Test the method with the same array and callback as in the example with the original filter method.
     b) Implement a function: myMap(array, callback)that, provided an array and a callback, provides the same functionality

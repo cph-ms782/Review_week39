@@ -1,7 +1,7 @@
 # Review week39
 
-## [Tuesday]  
-#### [Callbacks and more (JavaScript Exercises - Period 2 Day-1)](./review_week39_tuesday/README.md)  
+## [Tuesday](./review_week39_tuesday/README.md)  
+#### Callbacks and more (JavaScript Exercises - Period 2 Day-1)  
 The magic of callbacks - 0% done  
 reduce - 0% done  
 Hoisting - 0% done  
