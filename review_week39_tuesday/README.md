@@ -1,4 +1,4 @@
-# Review_week39
+# Review week39 tuesday
 
 ## [Callbacks and more (JavaScript Exercises - Period 2 Day-1)](https://docs.google.com/document/d/1vl8J-PUiFIzUt6jCE9gGpiw5XvOW1L3FeouTiWemwt8/edit)  
 
