@@ -30,19 +30,29 @@ var members = [
     { name: "Janne", age: 25 },
     { name: "Martin", age: 22 }]
 
-function ageReduce(total, currentValue) {
-    return (total + currentValue.age);
+function ageReduce(total, currentValue, index, arr) {
+    if (index === arr.length - 1) {
+        return (total + currentValue.age) / arr.length;
+    } else {
+        return (total + currentValue.age);
+    };
 };
 
-var ageing = members.reduce(ageReduce,0)/members.length;
+var ageing = members.reduce(ageReduce, 0);
 console.log(ageing);
 
 
 // d) Create a reduce function that will return a single object like {Clinton: 3, Trump: 4, None: 1 } 
-var votes = [ "Clinton","Trump","Clinton","Clinton","Trump","Trump","Trump","None"];
-var a = {}
-if (a["clinton"])
- console.log("I Will Not Print")
-a["clinton"] = 1;
-console.log("You will see me")
-console.log("Value of clinton "+ a["clinton"]);
+const votes = ["Clinton", "Trump", "Clinton", "Clinton", "Trump", "Trump", "Trump", "None"];
+
+const electionResult = votes.reduce(
+    (acc, el) => {
+
+        if (acc[el])
+            acc[el]++;
+        else
+            acc[el] = 1;
+        return acc;
+    }, {}); // <-- {} definerer at total værdien af reduce er et object
+
+console.log(electionResult);

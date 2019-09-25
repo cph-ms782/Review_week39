@@ -33,7 +33,7 @@ let filterA = (noget) => {
     noget.forEach(element => {
         if (element.includes('a')) {
             newArray.push(element);
-        }
+        };
     });
     return newArray;
 };
@@ -93,7 +93,7 @@ var result = numbers.map(function (num, index, numbers) {
         return num + numbers[++index];
     } else {
         return num;
-    }
+    };
 });
 console.log("4a.: " + result);
 
