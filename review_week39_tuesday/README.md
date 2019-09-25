@@ -17,8 +17,6 @@ Test the method with the same array and callback as in the example with the orig
 
 
 #### 4) Getting really comfortable with filter and map  
-
-
 a) Use map + a sufficient callback to map numbers into this array:
 `var result = [4,8,15,21,11];`  
 b) Use map() to create to create the <a>’s for a navigation set and eventually a string  
