@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "id": 100,
-      "age": 39,
-      "name": "Madeleine Flynn",
-      "gender": "female",
-      "email": "madeleineflynn@jumpstack.com"
-    },
-    {
       "id": 101,
       "age": 34,
       "name": "Cecile Benson",
@@ -97,6 +90,13 @@
       "gender": "male",
       "email": "peters@pan.com",
       "id": 113
+    },
+    {
+      "age": 23,
+      "name": "Peter Pan",
+      "gender": "male",
+      "email": "peters@pan.com",
+      "id": 114
     }
   ]
 }
