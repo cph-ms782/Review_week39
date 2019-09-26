@@ -8,7 +8,7 @@ document.querySelector("#deleteButton").addEventListener("click", deleteFunc);
 
 function getFunc() {
     console.log("Get function");
-    fetch("http://localhost:8080/Backend/api/test/1")
+    fetch("http://localhost:8080/api/test/1")
         .then(res => res.json())
         .then(data => {
             document.querySelector("#div").innerHTML = data.name;
@@ -28,7 +28,7 @@ function postFunc() {
         })
     }
 
-    fetch("http://localhost:8080/Backend/api/test/", options);
+    fetch("http://localhost:8080/api/test/", options);
 };
 
 function putFunc() {
@@ -44,7 +44,7 @@ function putFunc() {
         })
     }
 
-    fetch("http://localhost:8080/Backend/api/test/1", options);
+    fetch("http://localhost:8080/api/test/1", options);
 };
 
 function deleteFunc() {
@@ -56,5 +56,5 @@ function deleteFunc() {
         }
     }
 
-    fetch("http://localhost:8080/Backend/api/test/1", options);
+    fetch("http://localhost:8080/api/test/1", options);
 };
