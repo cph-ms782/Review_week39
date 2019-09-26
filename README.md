@@ -7,7 +7,10 @@ Hoisting - 0% done
 **this** in JavaScript - 0% done  
 Reusable Modules with Closures  - 0% done  
 
-### FetchAndPromise  
+### Fetch And Promise  
 [AJAX with fetch and DOM manipulation](./review_week39_tuesday/README.md) - 100% done  
 [Ajax with a full REST CRUD Endpoint and Error-handling](./review_week39_tuesday/README.md) - 100% done  
 [Create a Single Page Application that uses our cool API](./review_week39_tuesday/README.md) - 0% done  
+  
+### CORS and Single Page Application (SPA)  
+Single Origin Policy, and CORS with Java and JAX-RS - 0% done  
