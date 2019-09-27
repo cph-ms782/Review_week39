@@ -48,6 +48,18 @@ public class GenericResource {
     public String getJson(@PathParam("id") int id) {
         return objects.get(id);
     }
+    
+    @GET
+    @Path("fill")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String fillJson() {
+        objects.add("{\"name\" : \"Peter Pan\"}");
+        objects.add("{\"name\" : \"Peter Pondre\"}");
+        objects.add("{\"name\" : \"Peter Pæn\"}");
+        objects.add("{\"name\" : \"Jens Pan\"}");
+        objects.add("{\"name\" : \"Børge Pan\"}");
+        return "{\"status\" : \"Filled\"}";
+    }
 
     /** 
      * PUT method for updating or creating an instance of GenericResource
@@ -74,6 +86,7 @@ public class GenericResource {
     @Path("{id}")
     @Consumes(MediaType.APPLICATION_JSON)
     public String putJson(@PathParam("id") int id) {
-        return "{\"status\" : \"Slettet\"}";
+        objects.remove(id);
+        return "{\"status\" : \"Deleted\"}";
     }
 }

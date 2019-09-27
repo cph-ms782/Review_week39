@@ -8,10 +8,15 @@ document.querySelector("#deleteButton").addEventListener("click", deleteFunc);
 
 function getFunc() {
     console.log("Get function");
-    fetch("http://localhost:8080/api/test/1")
+    fetch("http://localhost:8080/the-facade-and-the-matching-endpoints/api/person/2")
         .then(res => res.json())
         .then(data => {
-            document.querySelector("#div").innerHTML = data.name;
+            document.querySelector("#div").innerHTML = "hejsa";
+            let list = [];
+            for(var key in data) {
+                list.push(data[key]);
+            }
+            document.querySelector("#div").innerHTML = list;
         })
 };
 
@@ -24,11 +29,13 @@ function postFunc() {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            name: "Peter Blonde"
+                "firstName": "Peter",
+                "lastName": "Blonde",
+                "phone": "11111111"
         })
     }
 
-    fetch("http://localhost:8080/api/test/", options);
+    fetch("http://localhost:8080/the-facade-and-the-matching-endpoints/api/person/", options);
 };
 
 function putFunc() {
@@ -40,11 +47,14 @@ function putFunc() {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            name: "Hans Pan"
+            "id": 2,
+            "firstName": "Hans",
+            "lastName": "Pan",
+            "phone": "545555555"
         })
     }
 
-    fetch("http://localhost:8080/api/test/1", options);
+    fetch("http://localhost:8080/the-facade-and-the-matching-endpoints/api/person/2", options);
 };
 
 function deleteFunc() {
@@ -56,5 +66,5 @@ function deleteFunc() {
         }
     }
 
-    fetch("http://localhost:8080/api/test/1", options);
+    fetch("http://localhost:8080/the-facade-and-the-matching-endpoints/api/person/3", options);
 };
