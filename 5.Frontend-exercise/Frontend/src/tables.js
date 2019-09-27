@@ -10,7 +10,7 @@ class Tables {
 
     list2Table(jsonList, htmlTag) {
         // console.log("jsonList", jsonList);
-        console.log("htmlTag", htmlTag);
+        // console.log("htmlTag", htmlTag);
 
         //Create a HTML Table element.
         var table = document.createElement("TABLE");

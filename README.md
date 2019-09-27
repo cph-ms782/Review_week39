@@ -21,7 +21,7 @@ Create a Single Page Application that uses our cool API - 0% done
 [Single Origin Policy, and CORS with Java and JAX-RS](./4.Exam-preparation-exercise-about-AJAX-CORS-and-SVG/Exampreparation-exercise-about-AJAX-CORS-and-SVG.md) - 66% done  
 
 ### Friday - Frontend exercise (last part of exercise from last week (thursday) - REST with JAX RS)  
-[JavaScript, DOM, AJAX, CORS and SVGS](./5.Frontend-exercise/Frontend-exercise.md) - 75% done  
+[JavaScript, DOM, AJAX, CORS and SVGS](./5.Frontend-exercise/Frontend-exercise.md) - 95% done  
 
 ### Friday - Extra exercise with both AJAX and JPA  
 JavaScript, DOM, JSON, AJAX and JPA - 0% done  
