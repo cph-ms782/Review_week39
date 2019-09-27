@@ -11,7 +11,7 @@ _Access to fetch at 'http://localhost:8080/the-facade-and-the-matching-endpoints
 _Uncaught (in promise) TypeError: Failed to fetch_  
 
 **Inserting filters in java code for request and response.**  
-Now no errors. Same headers as in last exercise so only showing GET and POST  
+_Now no errors. Same headers as in last exercise so only showing GET and POST_  
 
 _**GET**_  
 _Request Method: GET_ **-->  GET method using CORS**  
