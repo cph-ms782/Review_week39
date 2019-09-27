@@ -1,4 +1,6 @@
-## Single Origin Policy, and CORS with Java and JAX-RS  
+#### [CORS and Single Page Application (SPA) (CORS and hosting)](https://docs.google.com/document/d/1fqWz2euCYbUoVDf6kzj8pnW5ktalJAzuqWCfFGdwrmI/edit)  
+
+# Single Origin Policy, and CORS with Java and JAX-RS  
 ###Backend
 Test the API, using POSTMAN. This should not cause any CORS-related problems, WHY?  
 _**Everything is on the same server, url, port and protocol**_  

@@ -1,4 +1,6 @@
-## CORS with Java and Jax-rs for a real project  
+#### [CORS and Single Page Application (SPA) (CORS and hosting)](https://docs.google.com/document/d/1fqWz2euCYbUoVDf6kzj8pnW5ktalJAzuqWCfFGdwrmI/edit)  
+
+# CORS with Java and Jax-rs for a real project  
 
 Using **The-facade-and-the-matching-endpoints** from last week
 

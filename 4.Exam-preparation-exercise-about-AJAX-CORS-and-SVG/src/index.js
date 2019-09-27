@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 document.querySelector("#svg2").addEventListener("click", getFunc);
 
 function getFunc(e) {
-    // console.log("e.target.id: " + e.target.id);
+    console.log("e.target.id: " + e.target.id);
     // document.querySelector("#div").innerHTML = ("e.target.id: " + e.target.id);
     // document.querySelector("#error").innerHTML = ("e.target.id: " + "http://restcountries.eu/rest/v1/alpha?codes=" + e.target.id);
     var oldcountry = e.target.id;
