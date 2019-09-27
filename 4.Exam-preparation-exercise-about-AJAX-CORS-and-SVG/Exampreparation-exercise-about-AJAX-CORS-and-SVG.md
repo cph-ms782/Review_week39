@@ -14,3 +14,4 @@ Access-Control-Allow-Origin: *_
 
  1. Let's assume restcountries.eu had not allowed Cross Origin Calls. 
 Design a Web Proxy Solution (using a plain Servlet or JAX-RS) where your browser will send the request to your proxy who should forward the request on to the remote server and send back the received respons  
+**Not done**  

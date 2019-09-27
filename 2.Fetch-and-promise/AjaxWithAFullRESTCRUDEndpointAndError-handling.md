@@ -1,5 +1,5 @@
-## [FetchAndPromise](https://docs.google.com/document/d/1_PkGqF-1MVt0sFDR90ARJlUhQ8DsyC4L12NI6E-iWMc/edit#)
-### Ajax with a full REST CRUD Endpoint and Error-handling
+#### [FetchAndPromise](https://docs.google.com/document/d/1_PkGqF-1MVt0sFDR90ARJlUhQ8DsyC4L12NI6E-iWMc/edit#)
+# Ajax with a full REST CRUD Endpoint and Error-handling
 #### Test the POST method  
 Verify, via your browser that the new user have been added with an id.  
 **Status:** 201  

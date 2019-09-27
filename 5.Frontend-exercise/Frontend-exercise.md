@@ -9,4 +9,5 @@
 [Link](https://github.com/cph-ms782/Review_week39/blob/8ddd3eb9e55dc80e14e376fa219c247aaf0743a2/5.Frontend-exercise/Frontend/src/index.js#L38)  
 
 4.Add an option to delete and to edit persons  
+**Not done**  
   

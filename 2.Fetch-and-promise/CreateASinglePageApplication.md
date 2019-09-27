@@ -1,5 +1,5 @@
-# [FetchAndPromises](https://docs.google.com/document/d/1_PkGqF-1MVt0sFDR90ARJlUhQ8DsyC4L12NI6E-iWMc/edit#)  
-#### Create a Single Page Application that uses our cool API  
+#### [FetchAndPromises](https://docs.google.com/document/d/1_PkGqF-1MVt0sFDR90ARJlUhQ8DsyC4L12NI6E-iWMc/edit#)  
+# Create a Single Page Application that uses our cool API  
 
 * Show all users (in a table)  
 

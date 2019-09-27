@@ -4,6 +4,8 @@
 
 Using **The-facade-and-the-matching-endpoints** from last week
 
+####Monitor and explain the CORS-headers used in the communication between the two ends
+
 #### Trying to "GET" person 2 from DB:
 **Errors:**  
 _Access to fetch at 'http://localhost:8080/the-facade-and-the-matching-endpoints/api/person/2' from origin 'http://localhost:3456' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled._  
