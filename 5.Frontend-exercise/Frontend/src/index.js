@@ -3,16 +3,16 @@ import { isNullOrUndefined } from 'util';
 import tables from "./tables";
 
 var div;
-
 div = document.querySelector("#inputDiv");
+
+const mainURL = "http://localhost:8080/the-facade-and-the-matching-endpoints/api/person/";
 
 // 2. Add a reload button that should refresh the page designed in the 
 // previous step. Use Postman to add a new Person to verify that we 
 // actually get an updated list (without having to create a new page 
 // on the server).
 document.querySelector("#reloadButton").addEventListener("click", getFunc);
-document.querySelector("#addButton").addEventListener("click", toogleInput);
-document.querySelector("#addButtonInputForm").addEventListener("click", postFunc);
+document.querySelector("#addButton").addEventListener("click", toggleInputForm);
 
 getFunc();
 
@@ -22,7 +22,7 @@ getFunc();
 // built in the browser using plain JavaScript, and data fetched via a REST call.
 function getFunc() {
     // console.log("Get function");
-    fetch("http://localhost:8080/the-facade-and-the-matching-endpoints/api/person/all")
+    fetch(mainURL + "all")
         .then(res => res.json())
         .then(data => {
             // console.log("data", data);
@@ -35,7 +35,7 @@ function getFunc() {
 };
 
 function postFunc() {
-    div.style.display = div.style.display == "none" ? "block" : "none";
+    toggleInputForm("toggle");
     // console.log("post function");
     let options = {
         method: "POST",
@@ -50,19 +50,63 @@ function postFunc() {
         })
     }
 
-    fetch("http://localhost:8080/the-facade-and-the-matching-endpoints/api/person/", options);
+    fetch(mainURL, options);
 };
 
-function toogleInput() {
-    div.style.display = div.style.display == "none" ? "block" : "none";
+
+function putFunc(idsdsds) {
+    toggleInputForm("toggle");
+    console.log("put function, idNumber", idsdsds);
+    let options = {
+        method: "PUT",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "id": idsdsds,
+            "firstName": document.querySelector("#inputFirstName").value,
+            "lastName": document.querySelector("#inputLastName").value,
+            "phone": document.querySelector("#inputPhone").value
+        })
+    }
+    console.log("mainURL + id", mainURL + idsdsds)
+    fetch(mainURL + idsdsds, options);
 };
+
+function deleteFunc(id) {
+    console.log("delete function");
+    let options = {
+        method: "DELETE",
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }
+
+    fetch(mainURL + id, options);
+};
+
+
+function toggleInputForm(type, idnum) {
+    div.style.display = div.style.display == "none" ? "block" : "none";
+    if (type === "edit") {
+        console.log("in edit -> idnum", idnum)
+        document.querySelector("#addButtonInputForm").addEventListener("click", function () {
+            console.log("in edit function()-> idnum", idnum)
+            putFunc(idnum);
+        });
+    } else if (type === "toggle") {
+
+    }
+    else {
+        document.querySelector("#addButtonInputForm").addEventListener("click", postFunc);
+    }
+}
 
 function linking() {
     var tableBody = document.querySelectorAll("#tableDiv tbody tr");    // selecting all rows in table
     var firstRow = document.querySelector("#tableDiv tbody :first-child");    // selecting all rows in table
-    console.log("firstRow", firstRow);
-    // var x = document.getElementById("myTable").rows[0].cells;
-    // console.log("tableBody",tableBody);                              
+
     tableBody.forEach(element => {                                      // adding links to new tablecolumn but not the first row  
         if (firstRow !== element) {
 
@@ -89,7 +133,6 @@ function linking() {
             var editText = document.createTextNode("edit");
             editLinkNode.appendChild(editText);
             cell.appendChild(editLinkNode);
-
         }
     });
 }
@@ -98,9 +141,19 @@ function linking() {
 document.querySelector("#tableDiv").addEventListener("click", tableEvents);
 
 function tableEvents(e) {
-    console.log(e.target);
-    var id = e.target.parentElement.querySelector(":first-child").innerHTML;
-    var className = e.target.parentElement.querySelector(":last-child").innerHTML;
+    console.log("e.target", e.target);
+    var method = e.target.parentElement.querySelector(":first-child").innerHTML;
+    var id = e.target.parentElement.querySelector(":link").id;
 
-    console.log("id, className", id, className);
+    console.log("method", method);
+    console.log("id", id);
+
+    if (method === "delete") {
+        deleteFunc(id);
+        getFunc();
+    }
+    if (method === "edit") {
+        toggleInputForm("edit", id);
+        getFunc();
+    }
 };
