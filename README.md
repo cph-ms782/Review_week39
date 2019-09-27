@@ -8,8 +8,8 @@
 [Reusable Modules with Closures](./1.Callbacks-and-more/Reusable-Modules-with-Closures.md)  - 0% done  
 
 ### Wednesday - Fetch And Promise  
-[AJAX with fetch and DOM manipulation](./2.Fetch-and-promise/AJAX WithFetchAndDOMManipulation.md) - 100% done  
-[Ajax with a full REST CRUD Endpoint and Error-handling](./2.Fetch-and-promise/AjaxWithAFull RESTCRUDEndpointAndError-handling.md) - 100% done  
+[AJAX with fetch and DOM manipulation](./2.Fetch-and-promise/AJAXWithFetchAndDOMManipulation.md) - 100% done  
+[Ajax with a full REST CRUD Endpoint and Error-handling](./2.Fetch-and-promise/AjaxWithAFullRESTCRUDEndpointAndError-handling.md) - 100% done  
 [Create a Single Page Application that uses our cool API](./2.Fetch-and-promise/CreateASinglePageApplication.md) - 0% done  
   
 ### Thursday - CORS and Single Page Application (SPA) (CORS and hosting)  
