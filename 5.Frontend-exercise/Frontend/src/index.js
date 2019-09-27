@@ -68,7 +68,7 @@ function linking() {
 
             //first column of row = id
             var rowID = element.querySelector(":first-Child").innerHTML;
-            console.log("rowID", rowID);
+            // console.log("rowID", rowID);
 
             //creating delete link
             var cell = element.insertCell(-1);
@@ -79,7 +79,7 @@ function linking() {
             var deleteText = document.createTextNode("delete");
             deleteLinkNode.appendChild(deleteText);
             cell.appendChild(deleteLinkNode);
-            
+
             //creating edit link
             cell = element.insertCell(-1);
             var editLinkNode = document.createElement("a");
@@ -89,10 +89,18 @@ function linking() {
             var editText = document.createTextNode("edit");
             editLinkNode.appendChild(editText);
             cell.appendChild(editLinkNode);
+
         }
     });
+}
 
-    // var cell = e.target.parentElement.insertCell(-1);
-    // var text = document.createTextNode("edit/delete");
-    // cell.appendChild(text);
+//adding eventlistener to table body
+document.querySelector("#tableDiv").addEventListener("click", tableEvents);
+
+function tableEvents(e) {
+    console.log(e.target);
+    var id = e.target.parentElement.querySelector(":first-child").innerHTML;
+    var className = e.target.parentElement.querySelector(":last-child").innerHTML;
+
+    console.log("id, className", id, className);
 };
