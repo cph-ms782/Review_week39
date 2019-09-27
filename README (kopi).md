@@ -3,14 +3,14 @@
 ### Tuesday - Callbacks and more (JavaScript Exercises - Period 2 Day-1)  
 [The magic of callbacks](./1.Callbacks-and-more/magic-of-callbacks.md) - 100% done  
 [reduce](./1.Callbacks-and-more/reduce.md) - 100% done  
-Hoisting - 0% done  
-**this** in JavaScript - 0% done  
-Reusable Modules with Closures  - 0% done  
+[Hoisting](./1.Callbacks-and-more/Hoisting.md) - 0% done  
+[**this** in JavaScript](./1.Callbacks-and-more/this-in-JavaScript.md) - 0% done  
+[Reusable Modules with Closures](./1.Callbacks-and-more/Reusable-Modules-with-Closures.md)  - 0% done  
 
 ### Wednesday - Fetch And Promise  
 [AJAX with fetch and DOM manipulation](./2.Fetch-and-promise/AJAXWithFetchAndDOMManipulation.md) - 100% done  
 [Ajax with a full REST CRUD Endpoint and Error-handling](./2.Fetch-and-promise/AjaxWithAFullRESTCRUDEndpointAndError-handling.md) - 100% done  
-Create a Single Page Application that uses our cool API - 0% done  
+[Create a Single Page Application that uses our cool API](./2.Fetch-and-promise/CreateASinglePageApplication.md) - 0% done  
   
 ### Thursday - CORS and Single Page Application (SPA) (CORS and hosting)  
 [CORS with Java and Jax-rs](./3.CORS-and-Single-Page-Application(SPA)/1.CORSWithJavaAndJax-rs/CORSWithJavaAndJax-rs.md) - 100% done  
