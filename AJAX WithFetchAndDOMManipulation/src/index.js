@@ -20,29 +20,31 @@ import jokes from "./jokes";
 // };
 
 // document.querySelector("button").addEventListener("click", motD);
-document.querySelector("button").addEventListener("click", timer); 
+document.querySelector("button").addEventListener("click", timer);
 
-function motD(){
+function motD() {
     fetch("https://studypoints.info/jokes/api/jokes/period/hour")
-    .then(res => res.json())
-    .then(data => {
-        document.querySelector("#div").innerHTML =data.joke;
-  })
-  
+        .then(res => res.json())
+        .then(data => {
+            document.querySelector("#div").innerHTML = data.joke;
+        })
+
 };
 
-function timer(){
+function timer() {
     window.setTimeout(motD, 3000);
 };
 
 // Add the necessary event handlers, so when pressing each of the “hearts”,
 // it will write the  message North, South, East or West respectively.
-document.querySelector("#east").addEventListener("click", clickIreland); 
-document.querySelector("#north").addEventListener("click", clickIreland); 
-document.querySelector("#west").addEventListener("click", clickIreland); 
-document.querySelector("#south").addEventListener("click", clickIreland); 
+document.querySelector("#east").addEventListener("click", clickIreland);
+document.querySelector("#north").addEventListener("click", clickIreland);
+document.querySelector("#west").addEventListener("click", clickIreland);
+document.querySelector("#south").addEventListener("click", clickIreland);
 
-function clickIreland(e){
-    document.querySelector("#div").innerHTML = e.target.parentElement.id;
-     
+function clickIreland(e) {
+
+    document.querySelector("#div").innerHTML = "parent: " + e.target.parentElement.id +
+        "\ne.target: " + e.target.id;
+
 };

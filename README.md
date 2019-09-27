@@ -12,5 +12,8 @@ Reusable Modules with Closures  - 0% done
 [Ajax with a full REST CRUD Endpoint and Error-handling](./review_week39_tuesday/README.md) - 100% done  
 [Create a Single Page Application that uses our cool API](./review_week39_tuesday/README.md) - 0% done  
   
-### CORS and Single Page Application (SPA)  
+### CORS and Single Page Application (SPA) (CORS and hosting)  
 Single Origin Policy, and CORS with Java and JAX-RS - 0% done  
+
+### Exam preparation exercise about AJAX, CORS and SVG (SP5_AJAX_CORS)  
+
