@@ -18,7 +18,7 @@ Create a Single Page Application that uses our cool API - 0% done
 [Deploy a SPA on separate Servers](./3.CORS-and-Single-Page-Application(SPA)/3.Deploy-a-SPA-on-separate-Servers/deploy.md) - 100% done  
 
 ### Friday - Exam preparation exercise about AJAX, CORS and SVG (SP5_AJAX_CORS)  
-[Single Origin Policy, and CORS with Java and JAX-RS](./4.Exam-preparation-exercise-about-AJAX-CORS-and-SVG/Exampreparation-exercise-about-AJAX-CORS-and-SVG.md) - 66% done  
+[Single Origin Policy, and CORS with Java and JAX-RS](./4.Exam-preparation-exercise-about-AJAX-CORS-and-SVG/Exampreparation-exercise-about-AJAX-CORS-and-SVG.md) - 75% done  
 
 ### Friday - Frontend exercise (last part of exercise from last week (thursday) - REST with JAX RS)  
 [JavaScript, DOM, AJAX, CORS and SVGS](./5.Frontend-exercise/Frontend-exercise.md) - 100% done  

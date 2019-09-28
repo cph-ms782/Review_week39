@@ -2,19 +2,21 @@
 
 
 * Explain about the Object Model, and why it’s (very) relevant for modern Web-development  
-
+**Easy testing, debugging, and maintenance  
+It’s reusable  
+It’s sharable**  
 
 * Explain (using an example of your own choice) about JavaScript events, and Event Bubbling  
-
+Events wait for user actions
 
 * Elaborate on how JSON or XML supports communication between subsystems, even when the subsystems are implemented on diﬀerent platforms.  
-
+**They're standards, and standards makes coomunication possible**  
 
 * Explain the topic AJAX and how it has changed the way modern web-applications are created  
-
+**AJAX are asyncron and can come at any moment, not waiting for a server to feed data. It makes it possible to fetch data without reloading webpage**  
 
 * Explain the Same Origin Policy (for AJAX), and different ways to work around it  
-
+**SOP prevent cross origin data fetching. To get around it you can spedify which (other) webpages are cleared for feeding data**  
 
 
 # Exam preparation exercise about AJAX, CORS and SVG (SP5_AJAX_CORS
