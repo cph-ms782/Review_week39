@@ -1,4 +1,6 @@
-### Friday - Frontend exercise (last part of exercise from last week (thursday) - REST with JAX RS)  
+#### [Frontend exercise (last part of exercise from last week (thursday) - REST with JAX RS)](https://docs.google.com/document/d/19km0ZoaAX0k_stnYOWfAZPd4wXbTGMWhme1xZopj-PA/edit)  
+
+# Friday - Frontend exercise (last part of exercise from last week (thursday) - REST with JAX RS)  
  1.Implement a read-only page to show all Persons in a table. The table must be built in the browser using plain JavaScript, and data fetched via a REST call.  
 [Link](https://github.com/cph-ms782/Review_week39/blob/8ddd3eb9e55dc80e14e376fa219c247aaf0743a2/5.Frontend-exercise/Frontend/src/index.js#L19)  
 

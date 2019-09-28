@@ -1,5 +1,22 @@
 #### [Exam preparation exercise about AJAX, CORS and SVG (SP5_AJAX_CORS)](https://docs.google.com/document/d/1VMx1XdbnIbJ6ik98qPywGyrRiqbQuIM2u9DpJmXCnlk/edit)  
 
+
+* Explain about the Object Model, and why it’s (very) relevant for modern Web-development  
+
+
+* Explain (using an example of your own choice) about JavaScript events, and Event Bubbling  
+
+
+* Elaborate on how JSON or XML supports communication between subsystems, even when the subsystems are implemented on diﬀerent platforms.  
+
+
+* Explain the topic AJAX and how it has changed the way modern web-applications are created  
+
+
+* Explain the Same Origin Policy (for AJAX), and different ways to work around it  
+
+
+
 # Exam preparation exercise about AJAX, CORS and SVG (SP5_AJAX_CORS
 ## JavaScript, DOM, AJAX, CORS and SVG  
  1. So the exercise boils down to. Hook up an event handler on the map, get the id, perform an AJAX request to fetch the JSON-data from the link given above and update the GUI using the JSON returned as sketched above.  
