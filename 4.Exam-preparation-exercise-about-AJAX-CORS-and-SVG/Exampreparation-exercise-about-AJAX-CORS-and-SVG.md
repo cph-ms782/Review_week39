@@ -7,7 +7,7 @@ It’s reusable
 It’s sharable**  
 
 * Explain (using an example of your own choice) about JavaScript events, and Event Bubbling  
-Events wait for user actions
+**Events wait for user actions. You can make any tag wait for an action. If a child node has been clicked, the action will bubble up to be caught be the eventlistener listening on the parent-node**  
 
 * Elaborate on how JSON or XML supports communication between subsystems, even when the subsystems are implemented on diﬀerent platforms.  
 **They're standards, and standards makes coomunication possible**  
